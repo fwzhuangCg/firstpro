@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title> Search</title>
+</head>
+<body>
+	{% if errors %}
+	<ul>
+		{% for error in errors %}
+		<li>{{ error }}</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+	<form action="" method="get">
+		<input type="text" name ="q">
+		<imput tpye="submit" value="Search">
+	</form>
+</body>
+</html>
+		
